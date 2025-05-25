@@ -33,3 +33,14 @@
 
 # IDE configuration files
 .idea/
+
+# project files
+build/
+cmake-build-*/
+*.log
+*.bin
+*.cache
+*.png
+
+# MacOS system files
+.DS_Store

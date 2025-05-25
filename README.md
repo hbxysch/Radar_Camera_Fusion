@@ -1,2 +1,3 @@
-# Radar_Camera_Fusion
-fusion of radar and camera
+# Radar-Camera Fusion Project
+
+C++ project for simulating sensor fusion of radar and camera data.
