@@ -1,0 +1,5 @@
+#ifndef CAMERA_PROCESSOR_H
+#define CAMERA_PROCESSOR_H
+
+
+#endif // CAMERA_PROCESSOR_H
