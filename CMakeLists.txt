@@ -3,11 +3,11 @@ project(radar_camera_fusion)
 
 set(CMAKE_CXX_STANDARD 17)
 
-# 添加 include 路径
+# include path
 include_directories(include)
 
 # ===============================
-# OpenMP 配置（macOS + Homebrew）
+# OpenMP configuration（macOS + Homebrew）
 # ===============================
 set(OpenMP_C_FLAGS "-Xpreprocessor -fopenmp -I/opt/homebrew/include")
 set(OpenMP_CXX_FLAGS "-Xpreprocessor -fopenmp -I/opt/homebrew/include")
@@ -26,7 +26,7 @@ else()
 endif()
 
 # ===============================
-# 第三方库
+# third party libraries
 # ===============================
 find_package(OpenCV REQUIRED)
 find_package(PCL REQUIRED COMPONENTS common io visualization)
@@ -35,7 +35,7 @@ find_package(yaml-cpp REQUIRED)
 find_package(JsonCpp REQUIRED)
 
 # ===============================
-# Include 目录
+# Include directories
 # ===============================
 include_directories(
         ${OpenCV_INCLUDE_DIRS}
@@ -45,7 +45,7 @@ include_directories(
 )
 
 # ===============================
-# 源文件收集
+# source files
 # ===============================
 file(GLOB_RECURSE SRC_FILES
         src/fusion/*.hpp
@@ -54,7 +54,7 @@ file(GLOB_RECURSE SRC_FILES
 )
 
 # ===============================
-# 可执行文件和链接
+# executable and linking
 # ===============================
 add_executable(radar_camera_fusion ${SRC_FILES})
 
